@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Home(): JSX.Element {
   return (
-    <section className="w-screen h-svh sm:min-h-screen bg-charcoal-grey sm:flex sm:justify-center sm:items-center">
+    <section className="w-screen h-screen bg-charcoal-grey sm:flex sm:justify-center sm:items-center">
       <motion.main
         layout
         className="bg-white h-screen w-full sm:h-[370px] sm:w-[550px] sm:p-5 sm:rounded-xl sm:shadow-md flex flex-col-reverse sm:flex-row justify-end sm:justify-start sm:gap-4 gap-2"
@@ -15,7 +15,7 @@ export default function Home(): JSX.Element {
         {/* Left_Botton_Side */}
         <div>
           {/* info */}
-          <div className="flex flex-col gap-4 px-8 sm:p-0">
+          <div className="flex flex-col gap-4 px-8 my-2 sm:p-0">
             <h3 className="text-3xl text-slate-800/90 font-bold">
               Stay updated!
             </h3>
