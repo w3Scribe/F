@@ -21,7 +21,7 @@ export default function Home(): JSX.Element {
   const lableAnimation = {
     hide: { opacity: 0, x: 40 },
     show: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: 200 },
+    exit: { opacity: 0, x: 0 },
   };
 
   return (
@@ -79,9 +79,10 @@ export default function Home(): JSX.Element {
                 placeholder="email@company.com"
                 autoComplete="false"
                 className={clsx(
-                  "h-11 sm:h-9 w-full outline-none border border-slate-400 px-3 py-2 rounded-md text-sm focus:border-slate-700 valid:bg-slate-200",
-                  !isValidEmail &&
-                    "border-red-600 focus:border-red-600 text-red-700 bg-red-200 placeholder:text-red-400"
+                  "h-11 sm:h-9 w-full outline-none border  px-3 py-2 rounded-md text-sm  valid:bg-slate-200",
+                  !isValidEmail
+                    ? "border-red-600 focus:border-red-600 text-red-700 bg-red-200 placeholder:text-red-400"
+                    : "focus:border-slate-700 border-slate-400"
                 )}
                 onInput={(e) => isValidInput(e)}
               />
