@@ -7,8 +7,8 @@ import {motion} from "framer-motion"
 
 export default function Home(): JSX.Element {
   return (
-    <section className="w-screen h-svh sm:min-h-screen bg-charcoal-grey sm:flex sm:justify-center sm:items-center">
-      <motion.main layout className="bg-white h-full w-full sm:h-[360px] sm:w-[530px] sm:p-5 sm:rounded-xl sm:shadow-md flex flex-col-reverse sm:flex-row items-stretch gap-4">
+    <section className="w-screen min-h-screen bg-charcoal-grey sm:flex sm:justify-center sm:items-center">
+      <motion.main layout className="bg-white h-screen w-full sm:h-[360px] sm:w-[530px] sm:p-5 sm:rounded-xl sm:shadow-md flex flex-col-reverse items-start justify-between sm:flex-row sm:items-stretch gap-4">
         {/* Left_Botton_Side */}
         <div>
           {/* info */}
@@ -39,13 +39,13 @@ export default function Home(): JSX.Element {
               type="text"
               id="email"
               placeholder="email@company.com"
-              className=" h-9 w-full outline-none border border-slate-400 px-3 py-2 rounded-md text-sm"
+              className="h-11 sm:h-9 w-full outline-none border border-slate-400 px-3 py-2 rounded-md text-sm"
             />
             <Button name="Subscribe to monthly newsletter" />
           </div>
         </div>
         {/* Right_Top Side */}
-        <div className="relative sm:w-56 sm:h-full w-full h-72 bg-black">
+        <div className="relative sm:w-56 sm:h-full w-full h-72">
           <Image
             src="/desk.svg"
             alt="desk image"
