@@ -3,14 +3,17 @@
 import Image from "next/image";
 import List from "./List";
 import Button from "./Button";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 export default function Home(): JSX.Element {
   return (
-    <section className="w-screen min-h-screen bg-charcoal-grey sm:flex sm:justify-center sm:items-center">
-      <motion.main layout className="bg-white h-screen w-full sm:h-[360px] sm:w-[530px] sm:p-5 sm:rounded-xl sm:shadow-md flex flex-col-reverse items-start justify-between sm:flex-row sm:items-stretch gap-4">
+    <section className="w-screen min-h-svh sm:min-h-screen bg-charcoal-grey sm:flex sm:justify-center sm:items-center">
+      <motion.main
+        layout
+        className="bg-white h-screen w-full sm:h-[370px] sm:w-[550px] sm:p-5 sm:rounded-xl sm:shadow-md flex flex-col-reverse sm:flex-row justify-end sm:justify-start gap-4"
+      >
         {/* Left_Botton_Side */}
-        <div>
+        <div className="my-10 sm:my-0">
           {/* info */}
           <div className="flex flex-col gap-4 p-8 sm:p-0">
             <h3 className="text-3xl text-slate-800/90 font-bold">
@@ -26,7 +29,7 @@ export default function Home(): JSX.Element {
             </div>
           </div>
           {/* form */}
-          <div className="my-5 sm:pr-2 sm:pt-0 sm:pl-0 p-8">
+          <div className="my-5 sm:pr-4 sm:pt-0 sm:pl-0 p-8">
             <span className="flex justify-between items-center py-1 text-xs font-semibold">
               <label htmlFor="email" className="text-slate-700">
                 Email address
