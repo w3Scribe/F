@@ -1,5 +1,12 @@
 import type { Config } from "tailwindcss";
 
+const colors = {
+  grey: "#9294a0",
+  tomato: "#ff6257",
+  "dark-slate-grey": "#242742",
+  "charcoal-grey": "#36384e",
+};
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,11 +15,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      textColor: colors,
+      backgroundColor: colors,
+      boxShadowColor: colors,
+      borderColor: colors,
     },
   },
   plugins: [],
