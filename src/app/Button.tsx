@@ -1,14 +1,19 @@
-interface IName {
-  name: string;
+import type { FC } from "react";
+
+interface ButtonProps {
+  label: string;
+  onClick: Function;
 }
 
-export default function Button({ name }: IName): JSX.Element {
+const Button: FC<ButtonProps> = ({ label, onClick }) => {
   return (
     <button
-      className="h-11 sm:h-9 bg-dark-slate-grey w-full mt-3 mb-6 text-white rounded-md text-xs  hover:bg-gradient-to-r from-red-500 to-orange-500 
-      hover:shadow-lg hover:shadow-rose-500/30 font-semibold transition-all"
+      className="py-3 sm:py-2 sm:text-sm w-full rounded-md active:opacity-80 font-semibold   
+            bg-slateGrey-500  hover:bg-gradient-to-l from-[#FF6A3A] to-[#FF527B] text-white hover:shadow-xl hover:shadow-red-500/20 transition-all"
+      onClick={() => onClick()}
     >
-      {name}
+      {label}
     </button>
   );
-}
+};
+export default Button;
