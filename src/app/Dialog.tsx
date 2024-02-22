@@ -9,7 +9,7 @@ interface DialogProps {
 
 const Dialog: FC<DialogProps> = ({ userDetails, onClick }) => {
   return (
-    <div className=" bg-white w-full h-svh sm:w-72 sm:h-[370px] rounded-md space-y-4 flex sm:inline-block flex-col pt-40 pb-24 px-5 sm:p-5 justify-between">
+    <div className=" bg-white w-full h-svh sm:w-72 sm:h-[370px] sm:rounded-md space-y-4 flex sm:inline-block flex-col pt-40 pb-24 px-5 sm:p-5 justify-between">
       <div className="sm:mt-auto space-y-8 sm:space-y-4">
         <Image src={"/icon-success.svg"} alt="success" width={40} height={40} />
         <h3 className=" text-6xl sm:text-4xl font-semibold text-slateGrey-500">
